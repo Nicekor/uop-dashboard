@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../favicon.ico" rel="shortcut icon">
+  <title>Admin Dashboard</title>
+  <link href="style.css" rel="stylesheet" title="Default" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <script src="../../utils/api.js"></script>
+  <script src="../../utils/consts.js"></script>
+  <script src="../../utils/setup.js"></script>
+  <script src="verifyToken.js"></script>
+</head>
+
+<body>
+  <header>
+    <p class="action">Settings: <i id="settings-button" class="fas fa-cog"></i></p>
+    <div id="time-location-container">
+      <p id="time"> Loading Time...</p>
+      <p id="location"></p>
+    </div>
+    <p class="action">Logout: <i id="logout-button" class="fas fa-sign-out-alt"></i></p>
+  </header>
+  <main>
+    <div id="settings">
+      <div id="settings-header">
+        <p id="settings-title">Settings</p>
+        <i id="close-button" class="far fa-times-circle"></i>
+      </div>
+      <div class="option">
+        <label for="option-background">Background color: </label>
+        <select id="option-background"></select>
+        <p></p>
+        <label for="option-category">News category: </label>
+        <select id="option-category"></select>
+        <p>Reset: <i id="option-reset" class="fas fa-redo"></i></p>
+      </div>
+    </div>
+
+    <div id="news-box" class="dragme" draggable="true" data-item="0">
+      <p class="box-tittles">NEWS Headlines</p>
+      <ul id="news-list">
+        <li>Loading News...</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </main>
+  <script src="index.js"></script>
+  <script src="dragNdrop.js"></script>
+</body>

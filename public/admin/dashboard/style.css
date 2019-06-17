@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #a6a6a6;
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  background-color: #808080;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding: 0 25px 0 25px;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+header p {
+  color: white;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  display: inline-block;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+header .action {
+  justify-content: flex-start;
+}
+
+header .action i {
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+header #time-location-container {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+header #location {
+  margin-left: 1em;
+}
+
+.dragme {
+  position: relative;
+}
+
+main #settings {
+  display: none;
+  width: 75%;
+  height: 80%;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+
+  padding: 15px;
+  border: 2px dashed #999999;
+  border-radius: 15px;
+  background-color: #e6e6e6;
+}
+
+main #settings-header {
+  display: flex;
+  flex-direction: row;
+}
+
+main #settings-title {
+  flex: 1;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+main i.far.fa-times-circle {
+  font-size: 2em;
+  cursor: pointer;
+}
+
+main .option > label {
+  font-family: monospace;
+  font-size: 1.2em;
+}
+
+main .option > p {
+  margin-top: 1em;
+  font-family: monospace;
+  font-size: 1.2em;
+}
+
+main i.fas.fa-redo {
+  font-size: 2em;
+  cursor: pointer;
+}
+
+main #news-box {
+  display: inline-grid;
+  margin: 2em;
+  background-color: #808080;
+  max-width: 20em;
+  min-height: 14em;
+  border-radius: 10px;
+}
+
+main .box-tittles {
+  text-align: center;
+  padding: 1em;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-family: monospace;
+  font-weight: bold;
+  color: #333333;
+  border-bottom: solid 1px;
+}
+
+main ul {
+  list-style: none;
+}
+
+main li {
+  padding: 1em;
+  color: #333333;
+  text-align: justify;
+  border-bottom: solid 0.1px;
+}
+
+main li:last-child {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
